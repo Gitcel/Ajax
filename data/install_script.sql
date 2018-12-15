@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS ajax_database ;
+
+USE ajax_database ;
+
+CREATE TABLE IF NOT EXISTS users (
+
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    email_address VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);

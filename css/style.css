@@ -1,0 +1,173 @@
+:root {
+
+    --containerMainBackCol: rgba(255, 0, 0, 0.06);
+    --containerLeftBackCol: rgb(120, 120, 120);
+    --containerBackCol: rgb(200, 200, 200);
+    --solidBackCol: rgb(120, 120, 120);
+    --titleCol: rgba(60, 60, 60, 1);
+    --containerRightCol: rgba(60, 60, 60, 1);
+    --userInputBackCol: rgba(220, 220, 220, 1);
+    --buttonSignUpBackCol: rgba(120, 120, 120, 1);
+    --termsAndCondCol: rgba(60, 60, 60, 1);
+    --fontFam: Verdana, Geneva, sans-serif;
+
+}
+
+.container-main {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: var(--fontFam);
+    background-color: var(--containerMainCol);
+
+}
+
+.title {
+
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--fontFam);
+    color: var(--titleCol);
+
+}
+
+#subtitle {
+
+    font-size: 40px;
+
+}
+
+.solid {
+
+    width: 60px;
+    height: 60px;
+    background-color: var(--containerBackCol);
+
+}
+
+.container-left {
+
+    width: 500px;
+    height: 500px;
+    justify-self: center;
+    background-color: var(--containerBackCol);
+
+}
+
+.container-right {
+
+    width: 500px;
+    height: 500px;
+    padding: 20px 40px 0 40px;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: var(--containerRightCol);
+    
+}
+
+.form {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+.user-input {
+
+    padding: 0 0 10px 0;
+    font-family: var(--fontFam);
+
+}
+
+.user-input input {
+
+    width: 300px;
+    height: 35px;
+    background-color: var(--userInputBackCol);
+    border: none;
+    font-family: var(--fontFam);
+
+}
+
+.button-sign-up button {
+
+    width: 300px;
+    height: 35px;
+    border: none;
+    font-family: var(--fontFam);
+    color: white;
+    background-color: var(--buttonSignUpBackCol);
+
+}
+
+#terms-and-conditions a {
+    
+    font-family: var(--fontFam);
+    color: var(--termsAndCondCol);
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    .container-main { 
+        
+        flex-direction: column;
+    
+    }
+
+    .container-left {
+
+        width: 350px;
+        height: 350px;
+
+    }
+
+    .container-right-root {
+
+        padding: 20px 0 40px 0;
+
+    }
+
+    .container-right {
+
+        width: 350px;
+        height: 400px;        
+        padding-top: 20px;
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+
+    .container-main { 
+        
+        flex-direction: column;
+    
+    }
+
+    .container-left {
+
+        width: 500px;
+        height: 500px;
+
+    }
+
+    .container-right-root {
+
+        padding: 20px 0 40px 0;
+
+    }
+
+    .container-right {
+
+        width: 500px;
+        height: 500px;        
+        padding: 20px 40px 0 40px;
+
+    }
+    
+}
